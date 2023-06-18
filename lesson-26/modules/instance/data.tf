@@ -12,3 +12,7 @@ data "aws_ami" "amazonlinux2" {
   owners      = ["amazon"]
   most_recent = true
 }
+data "aws_vpc" "default" {
+  default = true
+}
+

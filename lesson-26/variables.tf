@@ -12,11 +12,11 @@ variable "instance_number" {
 
 variable "key_name" {
   type        = string
-  default     = "hillel-gr"
+  default     = "Klima"
   description = "description"
 }
 
 locals {
   nginx_port   = 8181
-  my_public_ip = lookup(data.external.my_ip.result, "ip", "127.0.0.1")
+  #my_public_ip = lookup(data.external.my_ip.result, "ip", "127.0.0.1")
 }

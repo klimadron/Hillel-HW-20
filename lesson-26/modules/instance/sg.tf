@@ -3,7 +3,7 @@ resource "aws_security_group" "fallback" {
   name = "backup-sg"
   description = "FALKBACK SG ALLOW ALL SSH"
   vpc_id = data.aws_vpc.default.id
-  tag = {
+  tags = {
     Name = "Backup-SG"
   }
 }
